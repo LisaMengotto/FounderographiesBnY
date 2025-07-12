@@ -1,13 +1,16 @@
 {
   "name": "vite-react-typescript-starter",
   "private": true,
+  "homepage": "https://lisamengotto.github.io/FounderographiesBnY",
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
   },
   "dependencies": {
     "lucide-react": "^0.344.0",
