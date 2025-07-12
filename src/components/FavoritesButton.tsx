@@ -30,7 +30,7 @@ export const FavoritesButton: React.FC<FavoritesButtonProps> = ({
           }`}
         />
         <span className="font-medium flex items-center gap-1">
-          {showFavoritesOnly ? 'Show All' : 'Favorites'}
+          {showFavoritesOnly ? 'Show All' : '  Favorites'}
           {favoritesCount > 0 && !showFavoritesOnly && (
             <span>({favoritesCount})</span>
           )}
