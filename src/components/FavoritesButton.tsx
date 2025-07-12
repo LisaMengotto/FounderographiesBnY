@@ -16,7 +16,7 @@ export const FavoritesButton: React.FC<FavoritesButtonProps> = ({
     <div className="flex justify-center mb-8">
       <button
         onClick={onToggle}
-        className={`flex items-center gap-3 px-6 py-3 rounded-2xl border-2 transition-all duration-300 ${
+        className={`flex items-center gap-4 px-6 py-3 rounded-2xl border-2 transition-all duration-300 ${
           showFavoritesOnly
             ? 'bg-yellow-400 border-yellow-400 text-black'
             : 'bg-transparent border-white text-white hover:border-yellow-400 hover:text-yellow-400'
@@ -30,7 +30,7 @@ export const FavoritesButton: React.FC<FavoritesButtonProps> = ({
           }`}
         />
         <span className="font-medium flex items-center gap-1">
-          {showFavoritesOnly ? 'Show All' : '  Favorites'}
+          {showFavoritesOnly ? 'Show All' : 'Favorites'}
           {favoritesCount > 0 && !showFavoritesOnly && (
             <span>({favoritesCount})</span>
           )}
